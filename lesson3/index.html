@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+
+    <div class="nav-bar"></div>
+   
+    <div id="app">
+        <div class="product">
+            <div class="product-image">
+                <a v-bind:href="url"><img v-bind:src="image" v-bind:alt="altText"></a>
+            </div>
+            <div class="product-info">
+                <h1>{{product}}</h1>
+                <div>{{description}}</div>
+                <span v-if="onSale" class="onsale">ON SALE!</span>
+                <p v-if="inventory > 10">In Stock</p>
+                <p v-else-if="inventory <= 10 && inventory > 0">Few Remaining!</p>
+                <p v-else>Out of Stock</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- development version, includes helpful console warnings from https://vuejs.org/v2/guide/ -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
