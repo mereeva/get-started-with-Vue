@@ -1,4 +1,4 @@
-# get-started-with-Vue.js
+# get-started-with-Vue
 Just the most essential steps you will need to get vue.js up and running
 
 # Requirements:
