@@ -13,16 +13,10 @@
     <div class="nav-bar"></div>
    
     <div id="app">
-        <div class="product">
-            <div class="product-image">
-                <a v-bind:href="url"><img v-bind:src="image" v-bind:alt="altText" v-bind:title="titleText"></a>
-            </div>
-            <div class="product-info">
-                <h1>{{product}}</h1>
-                <div>{{description}}</div>
-                <div><- Click on the image!</div>
-            </div>
+        <div class="cart">
+            <p>Cart({{cart}})</p>
         </div>
+        <product :premium="true" @add-to-cart=""></product>
     </div>
 
     <!-- development version, includes helpful console warnings from https://vuejs.org/v2/guide/ -->

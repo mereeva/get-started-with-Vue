@@ -5,6 +5,7 @@ var app = new Vue({
       description: "Socks of high quality",
       image: "./assets/brown-socks.jpeg",
       altText: "Brown socks",
+      titleText:"Brown socks",
       url:"./assets/brown-socks.jpeg"
     }
   })
