@@ -50,7 +50,9 @@ var app = new Vue({
           this.cart += 1
         },
         removeFromCart: function(){ //Anonymous function
-          this.cart -= 1
+          if(this.cart!=0){
+            this.cart -= 1
+          }
         },
         changeImage(variantImage){ //ES6 shorthand for anonymous function (Might not work on all browsers)
           this.image = variantImage

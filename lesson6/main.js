@@ -8,7 +8,7 @@ var app = new Vue({
       url:"./assets/brown-socks.jpeg",
       onSale:true,
       inStock:true,
-      inventory:11,
+      inventory:0,
       details:["Brown Colour", "Fabric: Cotton", "Pattern: Solid","For Men"],
       variants:[
         {
